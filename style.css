@@ -1,0 +1,406 @@
+:root {
+    --bs-orange: #f4623a;
+    --bs-body-bg: #fff;
+    --bs-body-color: #212529;
+    --bs-body-font-family: 'Merriweather Sans', sans-serif;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: var(--bs-body-font-size);
+    font-family: var(--bs-body-font-family);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.container {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .875rem;
+    padding-right: .875rem;
+}
+
+
+
+/**------------- Navigation Bar --------------- */
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bs-body-bg);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--bs-body-bg);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-collapse {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 1.875rem;
+    margin-left: 1.15rem;
+}
+
+.navbar-collapse a {
+    padding: .5rem;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 700;
+    color: rgb(117, 117, 117);
+    display: block;
+    transition: 0.3s;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--bs-body-color);
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    color: rgb(78, 78, 78);
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+}
+
+
+/**--------- Header ----------- */
+.header {
+    padding-top: 10rem;
+    padding-bottom: 5.5rem;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("img/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-title {
+    font-size: 2.25rem;
+    color: var(--bs-body-bg);
+    text-align: center;
+}
+
+.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: var(--bs-orange);
+    border: 1px solid var(--bs-orange);
+    opacity: 1;
+}
+
+
+
+
+
+.header-details {
+    color: var(--bs-body-bg);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.header-btn {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--bs-orange);
+    text-decoration: none;
+    color: var(--bs-body-bg);
+    cursor: pointer;
+}
+
+/**-------------- About ----------- */
+
+.about {
+    background-color: var(--bs-orange);
+    padding: 8rem 0;
+}
+
+
+.about-title {
+    font-size: calc(1.325rem + 0.9vw);
+    color: var(--bs-body-bg);
+    text-align: center;
+}
+
+.divider-white {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: var(--bs-body-bg);
+    border: 1px solid var(--bs-body-bg);
+    opacity: 1;
+}
+
+.about-btn {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--bs-body-bg);
+    text-decoration: none;
+    color: #030303;
+    cursor: pointer;
+}
+
+.about-details {
+    text-align: center;
+    color: var(--bs-body-bg);
+    max-width: max-content;
+    opacity: 65%;
+}
+
+
+/**--------------- Services --------------- */
+
+.services {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.services-title {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+.fa-2x {
+    color: var(--bs-orange);
+    margin-bottom: .5rem;
+}
+
+.service-item {
+    padding: 0 0.75rem;
+    margin-top: 3rem;
+}
+
+.service-item h3 {
+    margin-bottom: .5rem;
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+.service-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/**------------ Portfolio --------------- */
+
+.portfolio-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+}
+
+.portfolio-box img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.portfolio-box-caption {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--bs-orange);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: -1;
+}
+
+/**---------------- Call to action ------------------ */
+
+.information {
+    padding: 8rem 0;
+    background-color: rgb(33, 37, 41);
+    text-align: center;
+}
+
+.information-title {
+    color: var(--bs-body-bg);
+    margin-bottom: 1.5rem;
+}
+
+
+/**-------------- Contact ---------- */
+
+.contact {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+.contact-details {
+    color: #6c757d;
+    margin: 0 0 3rem 0;
+}
+
+.form {
+    padding: 0 0.75rem;
+}
+
+.floating-form {
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.floating-form input {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 1.25;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.floating-form:last-child input {
+    height: 10rem;
+}
+
+.floating-form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem .75rem;
+}
+
+.form-btn {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--bs-orange);
+    opacity: 65%;
+    text-decoration: none;
+    color: var(--bs-body-bg);
+    cursor: pointer;
+
+}
+
+.fa-xl {
+    margin: 4rem 1.5rem 1.5rem 1.5rem;
+    opacity: 65%;
+}
+
+
+/**------------ Footer ------------- */
+.footer {
+    text-align: center;
+    font-size: .875rem;
+    padding: 3rem 0;
+    opacity: 65%;
+}
+
+
+
+
+
+
+
+
+
+/*todo For Large laptop or desktop */
+@media screen and (min-width:1400px) {}
+
+
+/*todo For Medium laptop or desktop  */
+@media screen and (min-width:1200px) {}
+
+
+@media screen and (min-width:992px) {
+    .navbar-toggler {
+        /* display: none; */
+    }
+
+    .navbar-collapse {}
+}
+
+/*todo For Tablet  */
+@media screen and (max-width:768px) {
+    navbar-collapse a {
+        /* font-size: 1.75rem; */
+    }
+}
+
+
+/*todo For Mobile  */
+@media screen and (max-width:576px) {
+
+    .navbar-collapse a {
+        /* font-size: 1rem; */
+    }
+}

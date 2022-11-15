@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap the website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar Starts -->
+    <nav class="navbar container">
+
+        <div class="overlay" id="myNav">
+            <!-- Button to close the navigation -->
+            <a href="javascript:void(0)" class="navbar-toggler" onclick="closeNav()"><i
+                    class="fa-solid fa-2xl fa-bars"></i></a>
+
+            <!-- Main menu  -->
+            <div class="navbar-collapse">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="top">
+            <!-- Logo -->
+            <div><a href="#" class="logo">Start Bootstrap</a></div>
+
+            <!-- Button to open/show the navigation menu -->
+            <div>
+                <a class="navbar-toggler" onclick="openNav()"><i class="fa-solid fa-2xl fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Header Starts  -->
+
+    <header class="header container">
+        <div>
+            <h1 class="header-title">Your Favorite Place for Free Bootstrap Themes</h1>
+            <hr class="divider">
+            <p class="header-details">Start Bootstrap can help you build better websites using the Bootstrap
+                framework!
+                Just download a theme
+                and start customizing, no strings attached!</p>
+            <div class="btn"><a href="#" class="header-btn">Find Out More</a></div>
+        </div>
+    </header>
+    <!-- Header Ends  -->
+
+    <!-- About Section Starts -->
+    <section class="about container">
+        <div>
+            <h2 class="about-title">We've got what you need!</h2>
+            <hr class="divider-white">
+            <p class="about-details container">Start Bootstrap has everything you need to get your new website up and
+                running
+                in
+                no time! Choose one of
+                our open source, free to download, and easy to use themes! No strings attached!</p>
+            <div class="btn"><a href="#" class="about-btn">Get Started!</a></div>
+        </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Services Starts  -->
+    <section class="services container">
+        <div>
+            <h2 class="services-title">At Your Service</h2>
+            <hr class="divider">
+            <div class="service-row container">
+                <div class="service-item">
+                    <div><i class="fa-regular fa-2x fa-gem"></i></div>
+                    <h3>Sturdy Themes</h3>
+                    <p>Our themes are updated regularly to keep them bug free!</p>
+                </div>
+                <div class="service-item">
+                    <div><i class="fa-solid fa-2x fa-laptop"></i></div>
+                    <h3>Up to Date</h3>
+                    <p>All dependencies are kept current to keep things fresh.</p>
+                </div>
+                <div class="service-item">
+                    <div><i class="fa-solid fa-2x fa-globe"></i></div>
+                    <h3>Ready to Publish</h3>
+                    <p>You can use this design as is, or you can make changes!</p>
+                </div>
+                <div class="service-item">
+                    <div><i class="fa-regular fa-2x fa-heart"></i></div>
+                    <h3>Made with Love</h3>
+                    <p>Is it really open source if it's not made with love?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Ends -->
+
+    <!-- Portfolio Starts  -->
+    <section class="portfolio">
+        <div class="">
+            <div class="portfolio-row">
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/1.jpg" title="Project Name">
+                        <img src="img/1.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/2.jpg" title="Project Name">
+                        <img src="img/2.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/3.jpg" title="Project Name">
+                        <img src="img/3.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/4.jpg" title="Project Name">
+                        <img src="img/4.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/5.jpg" title="Project Name">
+                        <img src="img/5.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-col">
+                    <a class="portfolio-box" href="img/6.jpg" title="Project Name">
+                        <img src="img/6.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div>Category</div>
+                            <div>Project Name</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Ends -->
+
+    <!-- Call to Action starts  -->
+    <section class="information container">
+        <div>
+            <h2 class="information-title">Free Download at Start Bootstrap!</h2>
+            <div class="btn"><a href="https://startbootstrap.com/theme/creative/" class="about-btn">Download Now!</a>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action Ends -->
+
+    <!-- Contact Starts  -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact-title">Let's Get In Touch!</h2>
+            <hr class="divider" />
+            <p class="contact-details">Ready to start your next project with us? Send us a messages and we will get back
+                to you as soon as
+                possible!</p>
+            <div class="form">
+                <form class="contact_form">
+                    <!-- Name input  -->
+                    <div class="floating-form">
+                        <input type="text" placeholder="">
+                        <label for="name">Full Name</label>
+                    </div>
+
+                    <!-- Email Address input  -->
+                    <div class="floating-form">
+                        <input type="email" id="email" placeholder="">
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <!-- Phone Number input  -->
+                    <div class="floating-form">
+                        <input type="tel" placeholder="" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+
+                    <!-- Message input  -->
+                    <div class="floating-form">
+                        <input type="text" placeholder="" id="phone">
+                        <label for="message">Message</label>
+                    </div>
+                </form>
+                <button class="form-btn" href="#">Submit</button>
+
+                <div>
+                    <i class="fa-solid fa-xl fa-mobile-retro"></i>
+                    <div>+1 (555) 123-4567</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Ends -->
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div>
+            <div>Copyright &copy; 2022 - Company Name</div>
+        </div>
+    </footer>
+
+    <!-- javascript  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
